@@ -1,0 +1,314 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none;}
+ul { list-style-type: none;}
+
+body {
+    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+    min-width: 1200px;
+}
+/*머가리*/
+.header_wrap {
+    
+    height: 100px;
+}
+#main_header {
+  width: 1200px; height: 100px;
+  position: relative;
+  /* background: #ccc; */
+  margin: 0 auto;
+}
+#main_header > h1 {
+   position: absolute;
+   left: 0; top: 25px;
+}
+#gnb {
+   position: absolute;
+   right: 0; top: 35px;
+}
+#gnb > ul > li {
+  display: inline-block;
+   margin-right: 0px;
+   margin-left: 20px;
+}
+#gnb > ul > li:last-child { margin-right: 0;}
+#gnb > ul > li a { color: #333; font-size: 14px; font-weight: bold;}
+#gnb > ul > li a:hover, #gnb > ul > li a.selected {color: #b2a37a;}
+
+
+/*몸통*/
+#visual {
+    height: 590px;
+    overflow: hidden;
+    margin:0 auto;
+    text-align: center;
+}
+
+/*뉴스*/
+#news_1{
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+    height: 25px;
+    font-size: 12px;
+    background: #007b3b;
+    position: relative;
+}
+
+/*포지션 때문에 뉴스 아이콘을 위에다 달아줌*/
+#news_1 > .news1-2 img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+#news_2{
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+    height: 25px;
+    font-size: 12px;
+    position: relative;
+    background: #064e28;
+}
+#news_1 > .news1 a{
+    float: left;
+    color: white;
+    padding: 5px;
+    padding-top: 2px;
+    margin-left: 50px;
+}
+#news_2 > .news2{
+    float: left;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    color: white;
+    margin-left: 50px;
+}
+#news_1 > .news1 span,#news_2 > .news2 span{
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+/*뉴스 가운데 텍스트*/
+#news_1 > .news1-2{
+    padding: 5px;
+    padding-top: 2px;
+    margin-left: 50px;
+    float: left;
+}
+#news_1 > .news1-2 a{
+    color: white;
+}
+
+/*뉴스 가운데 텍스트2*/
+#news_2 > .news2-2{
+    padding: 5px;
+    padding-top: 2px;
+    margin-left: 196px;
+    float: left;
+}
+#news_2 > .news2-2 a{
+    color: white;
+}
+
+#news_2 > .news2 a{
+    color: white;
+}
+#news_2 > .news2-2 img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+/*뉴스 밑에 텍스트*/
+#con_header{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#con_header > .conHead h1{
+    position: absolute;
+    float: left;
+    bottom: 0;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+#con_header > .conHead h3{
+    position: absolute;
+    font-size: 16px;
+    float: left;
+    bottom: 0;
+    margin-left: 250px;
+    margin-bottom: 25px;
+}
+
+#con_header > .intHead h3{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/*메인 컨텐츠*/
+#main_content{
+    width: 1200px;
+    margin: 0 auto;
+}
+#main_content > #row > .col,#sub_content > #row > .col{
+    width: 386.66px;
+    float: left;
+    margin-right: 20px;
+    height: 355px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#main_content > #row{overflow: hidden;}
+
+#main_content > #row > .col:last-child,#sub_content > #row > .col:last-child{
+    margin-right: 0;
+}
+#main_content > #row > .col a{
+    color: black; font-size: 20px; font-weight: bold;
+}
+#main_content > #row > .col p{
+    font-size: 14px; margin-top: 20px;
+}
+#main_content > #row > .col > .col-text{
+    margin-top: 10px;
+}
+
+
+.cover{
+    opacity: 0;
+}
+.btn-cover{margin-top: 150px;}
+#main_content >#row > .col .btn-cover a{color: white;}
+#main_content > #row > .col .cover .btn-cover{
+    border: 2px solid white;
+    color: white;
+    background: black;
+    padding: 15px;
+    text-align: center;
+    line-height: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#main_content > #row > .col:hover .cover{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(45, 45, 45, 0.85);
+    opacity: 1;
+    transition: 0.2s;
+    color: white;
+    transition: 0.4s;
+}
+
+/*서브 컨텐츠영역*/
+#full-screenCon{
+    background-image: url("../images/2.jpg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 540px;
+    text-align: center;
+    margin: 0 auto;
+}
+#full-screenCon h1{
+    padding: 40px;
+    color: white;
+}
+
+#sub_content > #row > .col >.col-text .btn-more{
+    color: white;
+}
+#sub_content > #row > .col >.col-text{
+    margin-top: 15px;
+}
+
+#sub_content > #row > .col .btn-pl{
+    color: white;
+    background: black;
+    border: 1px solid white;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#sub_content > #row > .col .btn-pl:hover{
+    color: black;
+    background: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+/*푸터 영역*/
+
+#footer{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer-nav > li a{
+    color: black;
+}
+.footer-nav{
+    margin-left: 130px;
+    height: 50px;
+}
+.footer-nav > li{
+    float: left;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+#footer > .footer_logo{
+    width: 1200px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    padding-top: 10px;
+    background: #b7b7b7;
+}
+#footer > .footer_logo img{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+#footer > .footer_logo p{
+    float: right;
+    font-size: 12px;
+    margin-right: 350px;
+    margin-top: 25px;
+}
+
+
+
