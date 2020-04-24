@@ -1,185 +1,178 @@
 <!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <meta name="ViewPort" content="width=device-width, initial-scale=1,0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link href="css/style.css" rel="stylesheet">
-        <title>가치투자자문</title>
-    </head>
+<html lang="en">
 
-    <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가치투자자문</title>
+    <!-- 사용자 CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <!-- 사용자 자바스크립트 -->
+    <script src="js/main2.js"></script>
+</head>
 
-    </style>
-
-    <body>
-        <!-- header -->
-        <div class="header_wrap">
-            <header id="main_header">
-              <h1><img src="images/main_logo.png" alt="가치투자자문"></h1>
-              <nav id="gnb">
+<body>
+    <!-- header -->
+    <div class="header_wrap">
+        <header id="main_header">
+            <h1><a href="index.html"><img src="./images/main_logo.png" alt="가치투자자문"></a></h1>
+            <nav id="gnb">
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="sub.html">About us</a></li>
-                  <li><a href="#">What we do</a></li>
-                  <li><a href="#">Notice</a></li>
-                  <li><a href="#"><img src="icon/search.png" style="width: 20px; height: 20px;"></a></li>
-                  <li><a href="#"><img src="icon/login.png" style="width: 20px; height: 20px;"></a></li>
-                </ul>
-              </nav>
-            </header>
-          </div>
-        <!-- end header_wrap -->
-
-
-        <!-- Visual -->
-          <section id="visual">
-            <div class="img">
-              <img src="./images/Rectangle 3.jpg" alt="visual">
-            </div>
-          </section>
-        <!-- end Visual -->
-
-        <!-- news -->
-          <div id="news_1">
-              <div class="news1">
-                <ul>
-                    <li><a href="#">뉴스<span>|</span></a></li>
-                </ul>
-              </div>
-              <div class="news1-2">
-                  <ul>
-                    <li><a href="#">가치투자자문(주) 성과수수료 변경 안내...</a></li>
-                    <li><img src="images/arrow.png" class="img"></li>
-                  </ul>
-              </div>
-        </div>
-        <div id="news_2">
-            <div class="news2">
-                <ul>
-                    <li><a href="#">공시<span>|</span></a></li>
-                </ul>
-            </div>
-            <div class="news2-2">
-                <ul>
-                  <li><a href="#">[정기공시] 영업보고서 18기 2019.12.31...</a></li>
-                  <li><img src="images/arrow.png" class="img"></li>
-                </ul>
-            </div>
-        </div>
-        <!-- end News -->
-
-        <!-- content_header -->
-        <section id="con_header">
-            <div class="intHead">
-                <h3>Value Investing Advisors</h3>
-            </div>
-            <div class="conHead">
-                <h1>What we do</h1><h3>가치투자자문을 소개합니다</h3>
-            </div>
-        </section>
-        <!-- end content_header -->
-
-
-        <!-- Main_content -->
-        <section id="main_content">
-            <div id="row">
-                <div class="col">
-                    <img src="./images/투자철학.jpg">
-                    <div class="col-text">
-                        <a href="#" class="btn-more">투자철학/윤리경영</a>
-                        <p>가치투자자문을 이끌어나가는 박정구, 이서구
-                            공동대표님의 약력입니다.</p>
-                    </div>
-                    <div class="cover">
-                        <button class="btn-cover"><a href="#">MORE +</a></button>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <img src="./images/운용시스템.jpg">
-                    <div class="col-text">
-                        <a href="#" class="btn-more">운용시스템</a>
-                        <p>가치투자자문의 자산 운용방식에 대해 자세히 알고싶다면?</p>
-                    </div>
-                    <div class="cover">
-                        <button class="btn-cover"><a href="#">MORE +</a></button>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <img src="./images/자문서비스.jpg">
-                    <div class="col-text">
-                        <a href="#" class="btn-more">자문서비스</a>
-                        <p>가치투자자문(주)의 "투자 일임 서비스"에 관하여</p>
-                    </div>
-                    <div class="cover">
-                        <button class="btn-cover"><a href="#">MORE +</a></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end Main-content -->
-
-        <!-- Sub-content -->
-        <div id="full-screenCon">
-            <h1>COMPANY</h1>
-            <section id="sub_content">
-                <div id="row">
-                    <div class="col">
-                        <img src="./images/ceo인사말.jpg">
-                        <div class="col-text">
-                            <a href="#" class="btn-more">CEO 인사말</a><br>
-                            <button class="btn-pl">페이지 이동</button>
-                        </div>
-                        <div class="cover">
-                            <button class="btn-cover"><a href="#">MORE +</a></button>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <img src="./images/인력소개.jpg">
-                        <div class="col-text">
-                            <a href="#" class="btn-more">인력소개</a><br>
-                            <button class="btn-pl">페이지 이동</button>
-                        </div>
-                        <div class="cover">
-                            <button class="btn-cover"><a href="#">MORE +</a></button>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <img src="./images/회사개요.jpg">
-                        <div class="col-text">
-                            <a href="#" class="btn-more">회사개요</a><br>
-                            <button class="btn-pl">페이지 이동</button>
-                        </div>
-                        <div class="cover">
-                            <button class="btn-cover"><a href="#">MORE +</a></button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- end sub_content -->
-
-        <section id="footer">
-            <div class="footer_lText">
-                <ul class="footer-nav">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">운영방식</a></li>
-                    <li><a href="#">게시판 링크</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="sub.html">About us</a></li>
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#"><img class="gnb-icon" src="./icon/search.png" alt="서치아이콘"></a></li>
+                    <li><a href="#"><img class="gnb-icon" src="./icon/login.png" alt="로그인"></a></li>
                 </ul>
-            </div>    
-            <div class="footer_logo">
-                <img src="images/footer_logo.png">
-                <p>금융감독 인가 2003년 3월 7일 (투자자문 및 일임등록 : 등록번호 03-03-126)<br>
-                    서울특별시 영등포구 의사당대로 97, 13층 (여의도동,교보증권빌딩)<br>
-                    TEL (02)780-3113 FAX (02)780-3773<br><br>
-                    Copyright © 2017, Value Investing Advisors. All rights reserved. Powered by MKH</p>
-            </div>
-        </section>
+            </nav>
+        </header>
+    </div>
+    <!--end header wrap-->
 
-    </body>
+    <div id="main_visual">
+        <img src="./images/Rectangle 3.jpg" alt="visual">
+        <!-- <img src="./images/Rectangle 3.jpg" alt="visual"> -->
+        <!-- <img src="./images/Rectangle 3.jpg" alt="visual"> -->
+    </div>
+    <!--end main_visual-->
+
+    <section id="notice">
+        <div class="notice_container">
+            <ul>
+                <li>
+                    <p class="title">뉴스 <span>|</span></p>
+                    <p class="text">가치투자자문(주) 성과수수료 변경 안내</p>
+                    <img src="./images/arrow.png" alt="위아래" class="arrow_top">
+                </li>
+            </ul>
+        </div>
+        <div class="notice_con2">
+            <ul>
+                <li>
+                    <p class="title">공시 <span>|</span></p>
+                    <p class="text">[정기공시]영업보고서 18기 2019.12.31</p>
+                    <img src="./images/arrow.png" alt="위아래" class="arrow_bot">
+                </li>
+            </ul>
+        </div>
+    </section>
+<!-- content_header -->
+<section id="con_header">
+    <div class="conHead">
+        <h1>What we do</h1><h3>가치투자자문을 소개합니다</h3>
+    </div>
+</section>
+<!-- end content_header -->
+
+
+<!-- Main_content -->
+<section id="main_content">
+    <div id="row">
+        <div class="col">
+            <img src="./images/투자철학.jpg">
+            <div class="col-text">
+                <a href="#" class="btn-more">투자철학/윤리경영</a>
+                <p>가치투자자문을 이끌어나가는 박정구, 이서구
+                    공동대표님의 약력입니다.</p>
+            </div>
+            <div class="cover">
+                <button class="btn-cover"><a href="#">MORE +</a></button>
+            </div>
+        </div>
+
+        <div class="col">
+            <img src="./images/운용시스템.jpg">
+            <div class="col-text">
+                <a href="#" class="btn-more">운용시스템</a>
+                <p>가치투자자문의 자산 운용방식에 대해 자세히 알고싶다면?</p>
+            </div>
+            <div class="cover">
+                <button class="btn-cover"><a href="#">MORE +</a></button>
+            </div>
+        </div>
+
+        <div class="col">
+            <img src="./images/자문서비스.jpg">
+            <div class="col-text">
+                <a href="#" class="btn-more">자문서비스</a>
+                <p>가치투자자문(주)의 "투자 일임 서비스"에 관하여</p>
+            </div>
+            <div class="cover">
+                <button class="btn-cover"><a href="#">MORE +</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Main-content -->
+
+<!-- Sub-content -->
+<div id="full-screenCon">
+    <h1>COMPANY</h1>
+    <section id="sub_content">
+        <div id="row">
+            <div class="col">
+                <img src="./images/ceo인사말.jpg">
+                <div class="col-text">
+                    <a href="#" class="btn-more">CEO 인사말</a><br>
+                    <button class="btn-pl">페이지 이동</button>
+                </div>
+                <div class="cover">
+                    <button class="btn-cover"><a href="#">MORE +</a></button>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="./images/인력소개.jpg">
+                <div class="col-text">
+                    <a href="#" class="btn-more">인력소개</a><br>
+                    <button class="btn-pl">페이지 이동</button>
+                </div>
+                <div class="cover">
+                    <button class="btn-cover"><a href="#">MORE +</a></button>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="./images/회사개요.jpg">
+                <div class="col-text">
+                    <a href="#" class="btn-more">회사개요</a><br>
+                    <button class="btn-pl">페이지 이동</button>
+                </div>
+                <div class="cover">
+                    <button class="btn-cover"><a href="#">MORE +</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- end sub_content -->
+
+<footer id="footer">
+    <div class="footer_lText">
+        <ul class="footer-nav">
+            <li><a href="#">Home<span>  |</span></a></li>
+            <li><a href="#">운영방식<span>  |</span></a></li>
+            <li><a href="#">게시판 링크<span>  |</span></a></li>
+            <li><a href="#" style="font-weight:bold;">개인정보처리방침</a></li>
+        </ul>
+    </div>    
+    <div class="footer_logo">
+        <img src="images/footer_logo.png">
+        <p>금융감독 인가 2003년 3월 7일 (투자자문 및 일임등록 : 등록번호 03-03-126)<br>
+            서울특별시 영등포구 의사당대로 97, 13층 (여의도동,교보증권빌딩)<br>
+            TEL (02)780-3113 FAX (02)780-3773<br><br>
+            Copyright © 2017, Value Investing Advisors. All rights reserved. Powered by MKH</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+</body>
+
 </html>
